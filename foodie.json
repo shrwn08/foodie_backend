@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Masala Dosa",
+    "description": "Crispy rice crepe stuffed with spiced mashed potatoes.",
+    "category": "Breakfast",
+    "price": 150,
+    "rating": 4.6
+  },
+  {
+    "name": "Idli Sambar",
+    "description": "Steamed rice cakes served with tangy lentil soup.",
+    "category": "Breakfast",
+    "price": 120,
+    "rating": 4.4
+  },
+  {
+    "name": "Aloo Paratha",
+    "description": "Stuffed whole wheat flatbread with spiced potato filling.",
+    "category": "Breakfast",
+    "price": 100,
+    "rating": 4.5
+  },
+  {
+    "name": "Poha",
+    "description": "Flattened rice cooked with onions, turmeric, and peanuts.",
+    "category": "Breakfast",
+    "price": 90,
+    "rating": 4.3
+  },
+  {
+    "name": "Upma",
+    "description": "Savory semolina porridge cooked with vegetables.",
+    "category": "Breakfast",
+    "price": 80,
+    "rating": 4.2
+  },
+  {
+    "name": "Dhokla",
+    "description": "Steamed fermented chickpea batter, light and spongy.",
+    "category": "Breakfast",
+    "price": 110,
+    "rating": 4.5
+  },
+  {
+    "name": "Thepla",
+    "description": "Spiced flatbread made with whole wheat flour and fenugreek leaves.",
+    "category": "Breakfast",
+    "price": 95,
+    "rating": 4.3
+  },
+  {
+    "name": "Pesarattu",
+    "description": "Green gram crepe served with ginger chutney.",
+    "category": "Breakfast",
+    "price": 130,
+    "rating": 4.4
+  },
+  {
+    "name": "Misal Pav",
+    "description": "Spicy sprouted bean curry served with bread rolls.",
+    "category": "Breakfast",
+    "price": 140,
+    "rating": 4.3
+  },
+  {
+    "name": "Sabudana Khichdi",
+    "description": "Sautéed tapioca pearls with peanuts and spices.",
+    "category": "Breakfast",
+    "price": 120,
+    "rating": 4.2
+  },
+  {
+    "name": "Paneer Butter Masala",
+    "description": "Cottage cheese cubes in a creamy tomato gravy.",
+    "category": "Lunch",
+    "price": 260,
+    "rating": 4.6
+  },
+  {
+    "name": "Rajma Chawal",
+    "description": "Red kidney bean curry served with steamed rice.",
+    "category": "Lunch",
+    "price": 200,
+    "rating": 4.5
+  },
+  {
+    "name": "",
+    "description": "Lentils tempered with ghee, garlic, and spices.",
+    "category": "Lunch",
+    "price": 180,
+    "rating": 4.3
+  },
+  {
+    "name": "Baingan Bharta",
+    "description": "Smoky mashed eggplant curry with spices.",
+    "category": "Lunch",
+    "price": 190,
+    "rating": 4.2
+  },
+  {
+    "name": "Aloo Gobi",
+    "description": "Potato and cauliflower stir-fry with Indian spices.",
+    "category": "Lunch",
+    "price": 170,
+    "rating": 4.3
+  },
+  {
+    "name": "Chole Masala",
+    "description": "Spicy chickpea curry rich in flavors.",
+    "category": "Lunch",
+    "price": 220,
+    "rating": 4.4
+  },
+  {
+    "name": "Vegetable Pulao",
+    "description": "Aromatic basmati rice cooked with assorted vegetables and spices.",
+    "category": "Lunch",
+    "price": 200,
+    "rating": 4.2
+  },
+  {
+    "name": "Bhindi Masala",
+    "description": "Stir-fried okra with onions and spices.",
+    "category": "Lunch",
+    "price": 180,
+    "rating": 4.2
+  },
+  {
+    "name": "Palak Paneer",
+    "description": "Spinach and cottage cheese cooked with spices.",
+    "category": "Lunch",
+    "price": 220,
+    "rating": 4.5
+  },
+  {
+    "name": "Dal Makhani",
+    "description": "Creamy black lentils simmered with spices and butter.",
+    "category": "Lunch",
+    "price": 210,
+    "rating": 4.6
+  },
+  {
+    "name": "Shahi Paneer",
+    "description": "Paneer cooked in a rich, creamy, and nutty gravy.",
+    "category": "Dinner",
+    "price": 270,
+    "rating": 4.6
+  },
+  {
+    "name": "Kadhi Chawal",
+    "description": "Yogurt-based gram flour curry served with rice.",
+    "category": "Dinner",
+    "price": 180,
+    "rating": 4.3
+  },
+  {
+    "name": "Matar Paneer",
+    "description": "Cottage cheese and peas in a spiced tomato gravy.",
+    "category": "Dinner",
+    "price": 230,
+    "rating": 4.6
+  },
+  {
+    "name": "Malai Kofta",
+    "description": "Fried vegetable balls in a creamy, spiced sauce.",
+    "category": "Dinner",
+    "price": 250,
+    "rating": 4.5
+  },
+  {
+    "name": "Jeera Rice",
+    "description": "Fragrant cumin-flavored basmati rice.",
+    "category": "Dinner",
+    "price": 160,
+    "rating": 4.2
+  },
+  {
+    "name": "Dum Aloo",
+    "description": "Baby potatoes simmered in a rich, spicy gravy.",
+    "category": "Dinner",
+    "price": 190,
+    "rating": 4.4
+  },
+  {
+    "name": "Vegetable Khichdi",
+    "description": "Nutritious rice and lentil porridge cooked with vegetables.",
+    "category": "Dinner",
+    "price": 170,
+    "rating": 4.2
+  },
+  {
+    "name": "Gobi Manchurian",
+    "description": "Crispy cauliflower florets tossed in spicy sauce.",
+    "category": "Snacks",
+    "price": 150,
+    "rating": 4.5
+  },
+  {
+    "name": "Samosa",
+    "description": "Crispy pastry filled with spiced potatoes and peas.",
+    "category": "Snacks",
+    "price": 40,
+    "rating": 4.3
+  },
+  {
+    "name": "Pav Bhaji",
+    "description": "Spicy mashed vegetable curry served with buttered bread rolls.",
+    "category": "Snacks",
+    "price": 120,
+    "rating": 4.6
+  },
+  {
+    "name": "Dahi Puri",
+    "description": "Crispy puris filled with yogurt, chutneys, and spices.",
+    "category": "Snacks",
+    "price": 90,
+    "rating": 4.4
+  },
+  {
+    "name": "Sev Puri",
+    "description": "Crunchy puris topped with potatoes, chutneys, and sev.",
+    "category": "Snacks",
+    "price": 80,
+    "rating": 4.3
+  },
+  {
+    "name": "Bhel Puri",
+    "description": "Puffed rice mixed with vegetables, chutneys, and spices.",
+    "category": "Snacks",
+    "price": 70,
+    "rating": 4.5
+  },
+  {
+    "name": "Kachori",
+    "description": "Deep-fried snack stuffed with spicy lentil filling.",
+    "category": "Snacks",
+    "price": 50,
+    "rating": 4.3
+  },
+  {
+    "name": "Vada Pao",
+    "description": "Spiced potato fritter served in a bun with chutneys.",
+    "category": "Snacks",
+    "price": 60,
+    "rating": 4.6
+  },
+  {
+    "name": "Moong Dal Chilla",
+    "description": "Savory lentil pancakes stuffed with paneer and vegetables.",
+    "category": "Snacks",
+    "price": 110,
+    "rating": 4.4
+  },
+  {
+    "name": "Methi Thepla",
+    "description": "Gujarati spiced flatbread made with fenugreek leaves.",
+    "category": "Snacks",
+    "price": 100,
+    "rating": 4.3
+  },
+  {
+    "name": "Aloo Tikki",
+    "description": "Crispy spiced potato patties served with chutneys.",
+    "category": "Snacks",
+    "price": 80,
+    "rating": 4.4
+  },
+  {
+    "name": "Chilli Paneer",
+    "description": "Spicy cottage cheese cubes tossed in a tangy sauce.",
+    "category": "Snacks",
+    "price": 160,
+    "rating": 4.6
+  },
+  {
+    "name": "Hakka Noodles",
+    "description": "Indo-Chinese stir-fried noodles with vegetables.",
+    "category": "Snacks",
+    "price": 140,
+    "rating": 4.5
+  },
+  {
+    "name": "Veg Momos",
+    "description": "Steamed dumplings stuffed with spiced vegetables.",
+    "category": "Snacks",
+    "price": 120,
+    "rating": 4.4
+  },
+  {
+    "name": "Spring Rolls",
+    "description": "Crispy rolls filled with seasoned vegetables.",
+    "category": "Snacks",
+    "price": 110,
+    "rating": 4.3
+  },
+  {
+    "name": "Paneer Frankie",
+    "description": "Stuffed flatbread wrap with spiced paneer and sauces.",
+    "category": "Snacks",
+    "price": 130,
+    "rating": 4.5
+  },
+  {
+    "name": "Chole Bhature",
+    "description": "Fluffy deep-fried bread served with spicy chickpea curry.",
+    "category": "Dinner",
+    "price": 180,
+    "rating": 4.6
+  },
+  {
+    "name": "Vegetable Handi",
+    "description": "Mixed vegetables cooked in a creamy, flavorful gravy.",
+    "category": "Dinner",
+    "price": 220,
+    "rating": 4.5
+  },
+  {
+    "name": "Tandoori Roti",
+    "description": "Clay oven-baked whole wheat flatbread.",
+    "category": "Dinner",
+    "price": 30,
+    "rating": 4.3
+  },
+  {
+    "name": "Paneer Tikka",
+    "description": "Marinated and grilled cottage cheese cubes with spices.",
+    "category": "Dinner",
+    "price": 250,
+    "rating": 4.7
+  },
+  {
+    "name": "Dal Fry",
+    "description": "Lentil curry with garlic, tomatoes, and spices.",
+    "category": "Dinner",
+    "price": 190,
+    "rating": 4.5
+  },
+  {
+    "name": "Veg Biryani",
+    "description": "Fragrant basmati rice cooked with vegetables and aromatic spices.",
+    "category": "Dinner",
+    "price": 210,
+    "rating": 4.6
+  },
+  {
+    "name": "Rasgulla",
+    "description": "Spongy sweet dumplings soaked in sugar syrup.",
+    "category": "Dessert",
+    "price": 80,
+    "rating": 4.7
+  },
+  {
+    "dish_name": "Gulab Jamun",
+    "description": "Deep-fried khoya balls soaked in flavored sugar syrup.",
+    "category": "Dessert",
+    "price": 100,
+    "rating": "4.8"
+  },
+  {
+    "dish_name": "Jalebi",
+    "description": "Crispy, deep-fried spirals dipped in saffron-infused syrup.",
+    "category": "Dessert",
+    "price": 70,
+    "rating": "4.6"
+  },
+  {
+    "dish_name": "Kaju Katli",
+    "description": "Thin, diamond-shaped cashew fudge with a silver leaf topping.",
+    "category": "Dessert",
+    "price": 150,
+    "rating": "4.9"
+  },
+  {
+    "dish_name": "Rasmalai",
+    "description": "Soft paneer dumplings soaked in thickened saffron-flavored milk.",
+    "category": "Dessert",
+    "price": 120,
+    "rating": "4.8"
+  },
+  {
+    "dish_name": "Mysore Pak",
+    "description": "Rich, gram flour and ghee-based sweet from Karnataka.",
+    "category": "Dessert",
+    "price": 110,
+    "rating": "4.7"
+  },
+  {
+    "dish_name": "Malpua",
+    "description": "Sweet, deep-fried pancakes served with rabri.",
+    "category": "Dessert",
+    "price": 90,
+    "rating": "4.6"
+  },
+  {
+    "dish_name": "Modak",
+    "description": "Steamed rice flour dumplings filled with coconut and jaggery.",
+    "category": "Dessert",
+    "price": 130,
+    "rating": "4.8"
+  },
+  {
+    "dish_name": "Sandesh",
+    "description": "Bengali sweet made of fresh paneer and sugar.",
+    "category": "Dessert",
+    "price": 100,
+    "rating": "4.7"
+  },
+  {
+    "dish_name": "Peda",
+    "description": "Soft, milk-based sweet with cardamom and saffron flavor.",
+    "category": "Dessert",
+    "price": 90,
+    "rating": "4.7"
+  },
+  {
+    "dish_name": "Shrikhand",
+    "description": "Sweetened strained yogurt flavored with saffron and cardamom.",
+    "category": "Dessert",
+    "price": 110,
+    "rating": "4.8"
+  }
+]
