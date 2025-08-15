@@ -3,6 +3,7 @@ import dbConnection from "./database/db.js";
 import userRoutes from './routes/user.routes.js';
 import productRoutes from './routes/product.routes.js';
 import cartRoutes from "./routes/cart.routes.js";
+import orderRoutes from "./routes/order.routes.js";
 import cors from "cors";
 
 const port = process.env.PORT || 3000;
@@ -35,5 +36,6 @@ dbConnection();
 app.use("/auth/user", userRoutes);
 app.use("/auth", productRoutes);
 app.use("/cart", cartRoutes);
+app.use("/orders", orderRoutes);
 
 app.listen(port,()=> console.log(`server started on port ${port}`));
