@@ -2,6 +2,7 @@ import express from  "express";
 import dbConnection from "./database/db.js";
 import userRoutes from './routes/user.routes.js';
 import productRoutes from './routes/product.routes.js';
+import cartRoutes from "./routes/cart.routes.js";
 import cors from "cors";
 
 const port = process.env.PORT || 3000;
@@ -33,5 +34,6 @@ dbConnection();
 
 app.use("/auth/user", userRoutes);
 app.use("/auth", productRoutes);
+app.use("/cart", cartRoutes);
 
 app.listen(port,()=> console.log(`server started on port ${port}`));
