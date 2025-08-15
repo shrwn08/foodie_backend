@@ -3,6 +3,7 @@ import multer from 'multer';
 import {uploadProduct, getProducts} from '../controllers/product.controllers.js';
 import { CloudinaryStorage} from 'multer-storage-cloudinary';
 import cloudinary from '../config/cloudinary.js';
+import uploadCloudinary from '../config/multerCloudinary.js';
 
 const router = express.Router();
 
