@@ -2,6 +2,7 @@
   "name": "foodie-backend",
   "version": "1.0.0",
   "description": "this is for foodie backend",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

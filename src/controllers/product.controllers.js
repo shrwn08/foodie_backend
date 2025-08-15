@@ -1,8 +1,8 @@
-const productModel = require("../models/product.model");
+import productModel from "../models/product.model.js";
 
-const cloudinary = require("cloudinary");
+import cloudinary from "cloudinary";
 
-const uploadProduct = async (req, res) => {
+export const uploadProduct = async (req, res) => {
 
 
   try {
@@ -38,7 +38,7 @@ const uploadProduct = async (req, res) => {
   }
 };
 
-const getProducts = async (req, res) => {
+export const getProducts = async (req, res) => {
 
    const {category} = req.query;
    
@@ -60,4 +60,3 @@ const getProducts = async (req, res) => {
  
 };
 
-module.exports = { uploadProduct, getProducts };

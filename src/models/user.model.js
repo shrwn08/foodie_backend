@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
   {
@@ -26,13 +26,15 @@ const userSchema = mongoose.Schema(
       },
     address :{
         type: String,
-      required: true,
     },
 
 
       wallet : {
         type: Number,
           default: 5000,
+      },
+      refreshToken : {
+        type: String,
       }
 
 
@@ -42,4 +44,4 @@ const userSchema = mongoose.Schema(
 
 const User = mongoose.model("User", userSchema);
 
-module.exports = User;
+export default  User;

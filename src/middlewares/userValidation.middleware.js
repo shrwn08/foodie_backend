@@ -1,4 +1,4 @@
-const userSchema = require("../validation/user.validation");
+import userSchema from "../validation/user.validation.js";
 
 const userValidation = (req, res, next) => {
     const {error, value} = userSchema.validate(req.body);
@@ -7,4 +7,4 @@ const userValidation = (req, res, next) => {
     next();
 };
 
-module.exports = userValidation;
+export default userValidation;

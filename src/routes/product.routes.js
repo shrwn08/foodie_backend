@@ -1,8 +1,8 @@
-const express = require('express')
-const multer = require('multer')
-const {uploadProduct, getProducts} = require('../controllers/product.controllers')
-const { CloudinaryStorage} = require('multer-storage-cloudinary');
-const cloudinary = require('../config/cloudinary')
+import express from 'express';
+import multer from 'multer';
+import {uploadProduct, getProducts} from '../controllers/product.controllers.js';
+import { CloudinaryStorage} from 'multer-storage-cloudinary';
+import cloudinary from '../config/cloudinary.js';
 
 const router = express.Router();
 
@@ -28,4 +28,4 @@ router.post("/upload-product", upload.single('avatar'), uploadProduct);
 router.get('/products', getProducts);
 
 
-module.exports = router
+export default router
