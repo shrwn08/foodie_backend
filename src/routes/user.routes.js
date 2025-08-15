@@ -1,6 +1,7 @@
 import express from 'express';
 import userValidation from '../middlewares/userValidation.middleware.js';
-import {userRegister, userLogin, userLogout,userAddress, refreshToken, userWallet} from "../controllers/user.controllers.js";
+import {userRegister, userLogin, userLogout,userAddress,  userWallet} from "../controllers/user.controllers.js";
+import {verifyToken} from "../utils/verifyToken.js";
 
 const router = express.Router();
 
@@ -8,13 +9,11 @@ router.post("/register", userValidation, userRegister)
 
 router.post("/login", userLogin);
 
-router.post("/refresh", refreshToken);
+router.put("/address",verifyToken, userAddress);
 
-router.put("/address", userAddress);
+router.put("/wallet",verifyToken, userWallet)
 
-router.put("/wallet", userWallet)
-
-router.post("/logout", userLogout);
+router.post("/logout",verifyToken, userLogout);
 
 export default router
 

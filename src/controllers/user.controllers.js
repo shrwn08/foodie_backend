@@ -34,7 +34,6 @@ export const userRegister = async (req, res) => {
     );
 
 
-    const refreshToken = jwt.sign({id: createdUser._id, username : createdUser.username}, process.env.REFRESH_TOKEN_SECRET, {expiresIn : process.env.REFRESH_TOKEN_EXPIRY})
 
 
 
@@ -43,7 +42,6 @@ export const userRegister = async (req, res) => {
     res.status(201).json({
       user: createdUser,
       accessToken,
-      refreshToken, // Send refreshToken in response
       message: "User created successfully",
     });
   } catch (error) {
@@ -79,19 +77,15 @@ export const userLogin = async (req, res) => {
       });
 
 
-      const refreshToken = jwt.sign(
-        {id: user._id, username : user.username },
-        process.env.REFRESH_TOKEN_SECRET,
-        { expiresIn: process.env.REFRESH_TOKEN_EXPIRY }
-      );
 
-      user.refreshToken = refreshToken;
+
       await user.save();
 
+
+
       res.cookie("accessToken", accessToken, { httpOnly: true });
-      res.cookie("refreshToken", refreshToken, { httpOnly: true });
       return res
-        .json({ message: "User logged in successfully",accessToken, refreshToken ,user });
+        .json({ message: "User logged in successfully",accessToken });
     
   } catch (error) {
     res.status(500).json({message: "Internal server error" , error : error.message});
@@ -176,48 +170,14 @@ export const userWallet = async (req, res) => {
 export const userLogout = async (req, res) => {
   const { username } = req.body;
   if (username === "admin") {
-    res.clearCookie("refreshToken");
     return res.status(200).json({ message: "Admin logged out successfully" });
   }
   const user = await userModel.findOne({ username });
-  if (user) {
-    user.refreshToken = "";
-    await user.save();
-  }
-  res.clearCookie("refreshToken");
+
+
   res.status(200).json({ message: "User logged out successfully" });
 };
 
-export const refreshToken = async (req, res) => {
-  const refreshToken = req.cookies.refreshToken;
-  if (!refreshToken)
-    return res.status(403).json({ message: "Refresh token is required" });
 
-  try {
-    const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
-
-    if (decoded.username === "admin") {
-      const newAccessToken = jwt.sign(
-        { username: "admin", role: "admin" },
-        process.env.ACCESS_TOKEN_SECRET,
-        { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
-      );
-      return res.status(200).json({ accessToken: newAccessToken });
-    }
-
-    const user = await userModel.findOne({ username: decoded.username });
-    if (!user || user.refreshToken !== refreshToken)
-      return res.status(403).json({ message: "Invalid refresh token" });
-
-    const newAccessToken = jwt.sign(
-      { username: user.username },
-      process.env.ACCESS_TOKEN_SECRET,
-      { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
-    );
-    res.status(200).json({ accessToken: newAccessToken });
-  } catch (error) {
-    res.status(403).json({ message: "Invalid or expired refresh token" });
-  }
-};
 
 
